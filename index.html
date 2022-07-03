@@ -57,9 +57,7 @@
              document.getElementById("warningspan").style.display = "none";
             if(drawCistercianNumber(this.value,"c"))
             {
-                console.log(this.value);
-
-                if(parseInt(this.value) < 1)
+                if(this.value < 1)
                 {
                     document.getElementById("warningspan").style.display = "inline";
                 }
