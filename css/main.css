@@ -1,0 +1,61 @@
+body{
+    color: 333;
+    background: #e9e9e9
+}
+a,footer{
+    color: #666;
+}
+a:hover{
+    color: #333;
+}
+footer{
+    text-align: center;
+    font-size: 0.9em;
+}
+#c{
+    border: 1px solid #ccc;
+    background: #fff;
+}
+body>div{
+    width:800px;
+    padding:30px;
+    margin:0 auto 20px auto;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background:#eee;
+    
+}
+#generator{
+    text-align: center;
+}
+#datetime{
+    display:flex;
+    align-items:center;
+}
+#datetime span{
+    font-size:1.5em;
+    font-weight: 777;
+}
+#datetime canvas{
+    width:70px;
+    height:70px;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 5px;
+}
+#datetime #space{
+    width:20px;
+}
+#afterthought{
+    font-size:0.8em;
+    font-weight: 222;
+}
+#warning{
+    color: rgb(133, 34, 34);
+    height: 20px;
+   
+}
+#warning span{
+    display:none;
+}
