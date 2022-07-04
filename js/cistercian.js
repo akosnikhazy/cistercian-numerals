@@ -75,8 +75,12 @@ function drawCistercianNumber(num,canvasId){
     let digit = 0;
 
     if(num<0)
-    {
-        stringNum = stringNum.substring(1); 
+    { // if the number is negative we get rid of the "-"
+        stringNum = stringNum.substring(1);
+        
+        // also draw the marking of being negative
+        ctx.moveTo(30,50);
+        ctx.lineTo(70,50);
     } 
 
     stringNum = stringNum.padStart(4,"0");
@@ -98,11 +102,6 @@ function drawCistercianNumber(num,canvasId){
         
     }
     
-    if(num < 0)
-    {
-        ctx.moveTo(30,50);
-        ctx.lineTo(70,50);
-    }
     ctx.stroke();
     return true;
 }
