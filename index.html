@@ -53,7 +53,10 @@
     <script src="js/cistercian.js"></script>
     <script>
        "use strict"
-       document.getElementById("number").addEventListener("input",function(){
+       let number = document.getElementById("number");
+      
+       number.focus();
+       number.addEventListener("input",function(){
              document.getElementById("warningspan").style.display = "none";
             if(drawCistercianNumber(this.value,"c"))
             {
