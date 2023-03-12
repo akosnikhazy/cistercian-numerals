@@ -1,14 +1,14 @@
 "use strict"
 function drawCistercianNumber(num,canvasId){
-
+    
+    // the Cistercian system only capable of 1-9999, but I added 0 and negatve numbers to -9999 because why not?
+    if(num > 9999 || num < -9999 || num == '' || num == undefined || num == null ) return false;
+    
     let c = document.getElementById(canvasId);
     let ctx = c.getContext("2d");
     ctx.clearRect(0, 0, c.width, c.height);
     ctx.beginPath();
 
-    // the Cistercian system only capable of 1-9999, but I added 0 and negatve numbers to -9999 because why not?
-    if(num > 9999 || num < -9999 || num == '' || num == undefined || num == null ) return false;
-    
     ctx.lineWidth = 1.5;
 
     // the middle line is always present, might as well draw the line here
